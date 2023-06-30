@@ -1,0 +1,42 @@
+--lpm_compare CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone II" LPM_REPRESENTATION="UNSIGNED" LPM_WIDTH=64 ONE_INPUT_IS_CONSTANT="YES" aeb dataa CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 13.0 cbx_cycloneii 2013:06:12:18:03:43:SJ cbx_lpm_add_sub 2013:06:12:18:03:43:SJ cbx_lpm_compare 2013:06:12:18:03:43:SJ cbx_mgl 2013:06:12:18:05:10:SJ cbx_stratix 2013:06:12:18:03:43:SJ cbx_stratixii 2013:06:12:18:03:43:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+
+--synthesis_resources = 
+SUBDESIGN cmpr_aoi
+( 
+	aeb	:	output;
+	dataa[63..0]	:	input;
+) 
+VARIABLE 
+	aeb_result_wire[0..0]	: WIRE;
+	aneb_result_wire[0..0]	: WIRE;
+	data_wire[169..0]	: WIRE;
+	datab[63..0]	: NODE;
+	eq_wire	: WIRE;
+
+BEGIN 
+	aeb = eq_wire;
+	aeb_result_wire[] = (! aneb_result_wire[]);
+	aneb_result_wire[] = (data_wire[0..0] # data_wire[1..1]);
+	data_wire[] = ( datab[63..63], dataa[63..63], datab[62..62], dataa[62..62], datab[61..61], dataa[61..61], datab[60..60], dataa[60..60], datab[59..59], dataa[59..59], datab[58..58], dataa[58..58], datab[57..57], dataa[57..57], datab[56..56], dataa[56..56], datab[55..55], dataa[55..55], datab[54..54], dataa[54..54], datab[53..53], dataa[53..53], datab[52..52], dataa[52..52], datab[51..51], dataa[51..51], datab[50..50], dataa[50..50], datab[49..49], dataa[49..49], datab[48..48], dataa[48..48], datab[47..47], dataa[47..47], datab[46..46], dataa[46..46], datab[45..45], dataa[45..45], datab[44..44], dataa[44..44], datab[43..43], dataa[43..43], datab[42..42], dataa[42..42], datab[41..41], dataa[41..41], datab[40..40], dataa[40..40], datab[39..39], dataa[39..39], datab[38..38], dataa[38..38], datab[37..37], dataa[37..37], datab[36..36], dataa[36..36], datab[35..35], dataa[35..35], datab[34..34], dataa[34..34], datab[33..33], dataa[33..33], datab[32..32], dataa[32..32], datab[31..31], dataa[31..31], datab[30..30], dataa[30..30], datab[29..29], dataa[29..29], datab[28..28], dataa[28..28], datab[27..27], dataa[27..27], datab[26..26], dataa[26..26], datab[25..25], dataa[25..25], datab[24..24], dataa[24..24], datab[23..23], dataa[23..23], datab[22..22], dataa[22..22], datab[21..21], dataa[21..21], datab[20..20], dataa[20..20], datab[19..19], dataa[19..19], datab[18..18], dataa[18..18], datab[17..17], dataa[17..17], datab[16..16], dataa[16..16], datab[15..15], dataa[15..15], datab[14..14], dataa[14..14], datab[13..13], dataa[13..13], datab[12..12], dataa[12..12], datab[11..11], dataa[11..11], datab[10..10], dataa[10..10], datab[9..9], dataa[9..9], datab[8..8], dataa[8..8], datab[7..7], dataa[7..7], datab[6..6], dataa[6..6], datab[5..5], dataa[5..5], datab[4..4], dataa[4..4], datab[3..3], dataa[3..3], datab[2..2], dataa[2..2], datab[1..1], dataa[1..1], datab[0..0], dataa[0..0], ((data_wire[166..166] $ data_wire[167..167]) # (data_wire[168..168] $ data_wire[169..169])), ((data_wire[162..162] $ data_wire[163..163]) # (data_wire[164..164] $ data_wire[165..165])), ((data_wire[158..158] $ data_wire[159..159]) # (data_wire[160..160] $ data_wire[161..161])), ((data_wire[154..154] $ data_wire[155..155]) # (data_wire[156..156] $ data_wire[157..157])), ((data_wire[150..150] $ data_wire[151..151]) # (data_wire[152..152] $ data_wire[153..153])), ((data_wire[146..146] $ data_wire[147..147]) # (data_wire[148..148] $ data_wire[149..149])), ((data_wire[142..142] $ data_wire[143..143]) # (data_wire[144..144] $ data_wire[145..145])), ((data_wire[138..138] $ data_wire[139..139]) # (data_wire[140..140] $ data_wire[141..141])), ((data_wire[134..134] $ data_wire[135..135]) # (data_wire[136..136] $ data_wire[137..137])), ((data_wire[130..130] $ data_wire[131..131]) # (data_wire[132..132] $ data_wire[133..133])), ((data_wire[126..126] $ data_wire[127..127]) # (data_wire[128..128] $ data_wire[129..129])), ((data_wire[122..122] $ data_wire[123..123]) # (data_wire[124..124] $ data_wire[125..125])), ((data_wire[118..118] $ data_wire[119..119]) # (data_wire[120..120] $ data_wire[121..121])), ((data_wire[114..114] $ data_wire[115..115]) # (data_wire[116..116] $ data_wire[117..117])), ((data_wire[110..110] $ data_wire[111..111]) # (data_wire[112..112] $ data_wire[113..113])), ((data_wire[106..106] $ data_wire[107..107]) # (data_wire[108..108] $ data_wire[109..109])), ((data_wire[102..102] $ data_wire[103..103]) # (data_wire[104..104] $ data_wire[105..105])), ((data_wire[98..98] $ data_wire[99..99]) # (data_wire[100..100] $ data_wire[101..101])), ((data_wire[94..94] $ data_wire[95..95]) # (data_wire[96..96] $ data_wire[97..97])), ((data_wire[90..90] $ data_wire[91..91]) # (data_wire[92..92] $ data_wire[93..93])), ((data_wire[86..86] $ data_wire[87..87]) # (data_wire[88..88] $ data_wire[89..89])), ((data_wire[82..82] $ data_wire[83..83]) # (data_wire[84..84] $ data_wire[85..85])), ((data_wire[78..78] $ data_wire[79..79]) # (data_wire[80..80] $ data_wire[81..81])), ((data_wire[74..74] $ data_wire[75..75]) # (data_wire[76..76] $ data_wire[77..77])), ((data_wire[70..70] $ data_wire[71..71]) # (data_wire[72..72] $ data_wire[73..73])), ((data_wire[66..66] $ data_wire[67..67]) # (data_wire[68..68] $ data_wire[69..69])), ((data_wire[62..62] $ data_wire[63..63]) # (data_wire[64..64] $ data_wire[65..65])), ((data_wire[58..58] $ data_wire[59..59]) # (data_wire[60..60] $ data_wire[61..61])), ((data_wire[54..54] $ data_wire[55..55]) # (data_wire[56..56] $ data_wire[57..57])), ((data_wire[50..50] $ data_wire[51..51]) # (data_wire[52..52] $ data_wire[53..53])), ((data_wire[46..46] $ data_wire[47..47]) # (data_wire[48..48] $ data_wire[49..49])), ((data_wire[42..42] $ data_wire[43..43]) # (data_wire[44..44] $ data_wire[45..45])), ((data_wire[38..38] # data_wire[39..39]) # (data_wire[40..40] # data_wire[41..41])), (((data_wire[34..34] # data_wire[35..35]) # data_wire[36..36]) # data_wire[37..37]), (((data_wire[30..30] # data_wire[31..31]) # data_wire[32..32]) # data_wire[33..33]), (((data_wire[26..26] # data_wire[27..27]) # data_wire[28..28]) # data_wire[29..29]), (((data_wire[22..22] # data_wire[23..23]) # data_wire[24..24]) # data_wire[25..25]), (((data_wire[18..18] # data_wire[19..19]) # data_wire[20..20]) # data_wire[21..21]), (((data_wire[14..14] # data_wire[15..15]) # data_wire[16..16]) # data_wire[17..17]), (((data_wire[10..10] # data_wire[11..11]) # data_wire[12..12]) # data_wire[13..13]), ((data_wire[6..6] # data_wire[7..7]) # (data_wire[8..8] # data_wire[9..9])), (((data_wire[2..2] # data_wire[3..3]) # data_wire[4..4]) # data_wire[5..5]));
+	datab[] = GND;
+	eq_wire = aeb_result_wire[];
+END;
+--VALID FILE

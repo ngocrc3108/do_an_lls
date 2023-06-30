@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Bo_Nhan_64_Bit">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_eoc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|Shift_Register_64_bit:M1|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_eoc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|Shift_Register_64_bit:M1|lpm_clshift0:inst2|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_0kc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|Shift_Register_64_bit:M2|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_eoc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|Shift_Register_64_bit:M2|lpm_clshift0:inst2|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_0kc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|lpm_add_sub0:inst10|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_ulh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bo_Nhan_64_Bit|lpm_compare0:inst2|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_aoi.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
