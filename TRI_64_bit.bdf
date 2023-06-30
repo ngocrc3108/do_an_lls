@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 424 632 592 648)
+	(rect 496 144 664 160)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "I[63..0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 424 672 592 688)
+	(rect 496 184 664 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "done" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1680 624 1856 640)
+	(rect 1632 136 1808 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "O[63..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
@@ -3268,8 +3268,8 @@ applicable agreement for further details.
 	(pt 1496 1136)
 )
 (connector
-	(text "O[63..0]" (rect 1610 616 1650 628)(font "Arial" ))
-	(pt 1680 632)
-	(pt 1600 632)
+	(text "O[63..0]" (rect 1562 128 1602 140)(font "Arial" ))
+	(pt 1632 144)
+	(pt 1552 144)
 	(bus)
 )

@@ -4,4 +4,5 @@ LPM_WIDTH=8
 DEVICE_FAMILY="Cyclone II"
 dataa
 datab
-aeb
+ageb
+aleb

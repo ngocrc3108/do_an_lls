@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 232 224 400 240)
+	(rect 296 224 464 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "D[63..0]" (rect 5 0 46 12)(font "Arial" ))
+	(text "D[63..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 232 256 400 272)
+	(rect 296 256 464 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 224 304 400 320)
+	(rect 288 304 464 320)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q[63..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
@@ -1220,7 +1220,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 264 392 280 424)
+	(rect 328 392 344 424)
 	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
 	(text "inst10" (rect 5 0 17 29)(font "Arial" )(vertical)(invisible))
 	(port
@@ -2012,12 +2012,6 @@ applicable agreement for further details.
 	(pt 1200 640)
 )
 (connector
-	(text "Q[63..0]" (rect 186 296 226 308)(font "Arial" ))
-	(pt 224 312)
-	(pt 176 312)
-	(bus)
-)
-(connector
 	(text "vcc" (rect 514 376 532 388)(font "Arial" ))
 	(pt 544 392)
 	(pt 528 392)
@@ -2031,11 +2025,6 @@ applicable agreement for further details.
 	(text "vcc" (rect 978 376 996 388)(font "Arial" ))
 	(pt 1008 392)
 	(pt 992 392)
-)
-(connector
-	(text "vcc" (rect 290 392 308 404)(font "Arial" ))
-	(pt 280 408)
-	(pt 320 408)
 )
 (connector
 	(text "vcc" (rect 1210 376 1228 388)(font "Arial" ))
@@ -2061,6 +2050,17 @@ applicable agreement for further details.
 	(text "vcc" (rect 1210 624 1228 636)(font "Arial" ))
 	(pt 1240 640)
 	(pt 1224 640)
+)
+(connector
+	(text "Q[63..0]" (rect 250 296 290 308)(font "Arial" ))
+	(pt 288 312)
+	(pt 240 312)
+	(bus)
+)
+(connector
+	(text "vcc" (rect 354 392 372 404)(font "Arial" ))
+	(pt 344 408)
+	(pt 384 408)
 )
 (junction (pt 528 392))
 (junction (pt 760 392))

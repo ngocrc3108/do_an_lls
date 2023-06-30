@@ -66,7 +66,7 @@ O[63] <= TRI_64_bit:inst5.O[63]
 Start => Control:inst11.Start
 CLK => Shift_Register_64_bit:M2.CLK
 CLK => Control:inst11.CLK
-CLK => Register_64_bit:inst.CLK
+CLK => Register_64_bit:Product.CLK
 CLK => Shift_Register_64_bit:M1.CLK
 B[0] => SignExtend:inst7.I[0]
 B[1] => SignExtend:inst7.I[1]
@@ -2581,7 +2581,7 @@ I[30] => O[30].DATAIN
 I[31] => O[31].DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst
+|Bo_Nhan_64_Bit|Register_64_bit:Product
 Q[0] <= 8dff:inst.Q1
 Q[1] <= 8dff:inst.Q2
 Q[2] <= 8dff:inst.Q3
@@ -2720,7 +2720,7 @@ CLK => 8dff:inst4.CLK
 CLK => 8dff:inst8.CLK
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -2763,7 +2763,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst5
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst5
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -2806,7 +2806,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst2
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst2
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -2849,7 +2849,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst6
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst6
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -2892,7 +2892,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst3
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst3
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -2935,7 +2935,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst7
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst7
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -2978,7 +2978,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst4
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst4
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
@@ -3021,7 +3021,7 @@ Q8 <= 27.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 27.DATAIN
 
 
-|Bo_Nhan_64_Bit|Register_64_bit:inst|8dff:inst8
+|Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst8
 Q1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 1.ACLR
 CLRN => 9.ACLR
