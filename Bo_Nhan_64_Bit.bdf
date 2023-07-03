@@ -302,7 +302,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 664 128 776 216)
+	(rect 576 128 688 216)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
 	(text "inst4" (rect 3 77 26 89)(font "Arial" ))
 	(port
@@ -347,7 +347,7 @@ applicable agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 616 88 798 116))
+	(annotation_block (parameter)(rect 528 88 710 116))
 )
 (symbol
 	(rect 1024 408 1152 504)
@@ -475,6 +475,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "CLR" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLR" (rect 21 59 44 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
 		(pt 144 32)
 		(output)
 		(text "Q[63..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
@@ -484,11 +491,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 128 80))
 	)
-)
-(connector
-	(text "WE" (rect 786 456 803 468)(font "Arial" ))
-	(pt 824 472)
-	(pt 776 472)
 )
 (connector
 	(text "CLK" (rect 786 472 807 484)(font "Arial" ))
@@ -528,11 +530,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "WE" (rect 794 304 811 316)(font "Arial" ))
-	(pt 784 320)
-	(pt 832 320)
-)
-(connector
 	(text "CLK" (rect 794 320 815 332)(font "Arial" ))
 	(pt 784 336)
 	(pt 832 336)
@@ -547,24 +544,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 664 192)
-	(pt 600 192)
-	(bus)
-)
-(connector
-	(pt 664 160)
-	(pt 640 160)
-	(bus)
-)
-(connector
 	(pt 1016 176)
 	(pt 1016 272)
 	(bus)
-)
-(connector
-	(text "CLK" (rect 802 176 823 188)(font "Arial" ))
-	(pt 824 192)
-	(pt 792 192)
 )
 (connector
 	(pt 1192 288)
@@ -579,11 +561,6 @@ applicable agreement for further details.
 (connector
 	(pt 968 304)
 	(pt 1032 304)
-	(bus)
-)
-(connector
-	(pt 776 176)
-	(pt 824 176)
 	(bus)
 )
 (connector
@@ -608,46 +585,6 @@ applicable agreement for further details.
 	(pt 1200 464)
 )
 (connector
-	(text "Q2[0]" (rect 702 213 714 240)(font "Arial" )(vertical))
-	(pt 720 216)
-	(pt 720 248)
-)
-(connector
-	(pt 640 160)
-	(pt 640 72)
-	(bus)
-)
-(connector
-	(pt 640 72)
-	(pt 1016 72)
-	(bus)
-)
-(connector
-	(pt 1016 72)
-	(pt 1016 128)
-	(bus)
-)
-(connector
-	(pt 1016 128)
-	(pt 1016 176)
-	(bus)
-)
-(connector
-	(pt 600 192)
-	(pt 600 56)
-	(bus)
-)
-(connector
-	(pt 1232 56)
-	(pt 600 56)
-	(bus)
-)
-(connector
-	(pt 1232 288)
-	(pt 1232 56)
-	(bus)
-)
-(connector
 	(text "Done" (rect 954 608 979 620)(font "Arial" ))
 	(pt 944 624)
 	(pt 984 624)
@@ -667,14 +604,89 @@ applicable agreement for further details.
 	(pt 784 640)
 )
 (connector
-	(text "WE" (rect 954 592 971 604)(font "Arial" ))
+	(text "Done" (rect 1042 128 1067 140)(font "Arial" ))
+	(pt 1064 144)
+	(pt 1032 144)
+)
+(connector
+	(text "WE/CLR" (rect 954 592 997 604)(font "Arial" ))
 	(pt 944 608)
 	(pt 984 608)
 )
 (connector
-	(text "Done" (rect 1042 128 1067 140)(font "Arial" ))
-	(pt 1064 144)
-	(pt 1032 144)
+	(pt 576 192)
+	(pt 512 192)
+	(bus)
+)
+(connector
+	(pt 576 160)
+	(pt 552 160)
+	(bus)
+)
+(connector
+	(text "Q2[0]" (rect 614 213 626 240)(font "Arial" )(vertical))
+	(pt 632 216)
+	(pt 632 248)
+)
+(connector
+	(pt 552 160)
+	(pt 552 72)
+	(bus)
+)
+(connector
+	(pt 1016 72)
+	(pt 552 72)
+	(bus)
+)
+(connector
+	(pt 512 192)
+	(pt 512 56)
+	(bus)
+)
+(connector
+	(pt 1232 56)
+	(pt 512 56)
+	(bus)
+)
+(connector
+	(pt 1232 288)
+	(pt 1232 56)
+	(bus)
+)
+(connector
+	(pt 1016 72)
+	(pt 1016 128)
+	(bus)
+)
+(connector
+	(pt 1016 128)
+	(pt 1016 176)
+	(bus)
+)
+(connector
+	(pt 688 176)
+	(pt 824 176)
+	(bus)
+)
+(connector
+	(text "CLK" (rect 786 176 807 188)(font "Arial" ))
+	(pt 824 192)
+	(pt 776 192)
+)
+(connector
+	(text "WE/CLR" (rect 770 192 813 204)(font "Arial" ))
+	(pt 824 208)
+	(pt 760 208)
+)
+(connector
+	(text "WE/CLR" (rect 786 456 829 468)(font "Arial" ))
+	(pt 824 472)
+	(pt 776 472)
+)
+(connector
+	(text "WE/CLR" (rect 778 304 821 316)(font "Arial" ))
+	(pt 832 320)
+	(pt 768 320)
 )
 (junction (pt 1016 176))
 (junction (pt 1016 128))

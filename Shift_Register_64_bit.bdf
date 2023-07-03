@@ -229,6 +229,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "CLR" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLR" (rect 21 59 44 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
 		(pt 144 32)
 		(output)
 		(text "Q[63..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
@@ -237,6 +244,23 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 128 80))
+	)
+)
+(symbol
+	(rect 1264 496 1296 528)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst3" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
 	)
 )
 (connector
@@ -326,5 +350,13 @@ applicable agreement for further details.
 (connector
 	(pt 784 552)
 	(pt 776 552)
+)
+(connector
+	(pt 1304 480)
+	(pt 1280 480)
+)
+(connector
+	(pt 1280 480)
+	(pt 1280 496)
 )
 (junction (pt 1464 448))

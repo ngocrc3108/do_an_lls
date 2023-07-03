@@ -335,7 +335,7 @@ CLK => inst2.CLK
 CLK => inst.CLK
 Zero => inst9.IN2
 Start => inst8.IN2
-WE <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+WE <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Bo_Nhan_64_Bit|lpm_compare0:inst2
@@ -885,6 +885,7 @@ CLK => 8dff:inst3.CLK
 CLK => 8dff:inst7.CLK
 CLK => 8dff:inst4.CLK
 CLK => 8dff:inst8.CLK
+CLR => inst9.IN0
 
 
 |Bo_Nhan_64_Bit|Shift_Register_64_bit:M2|Register_64_bit:inst0|8dff:inst
@@ -2718,6 +2719,7 @@ CLK => 8dff:inst3.CLK
 CLK => 8dff:inst7.CLK
 CLK => 8dff:inst4.CLK
 CLK => 8dff:inst8.CLK
+CLR => inst9.IN0
 
 
 |Bo_Nhan_64_Bit|Register_64_bit:Product|8dff:inst
@@ -4645,6 +4647,7 @@ CLK => 8dff:inst3.CLK
 CLK => 8dff:inst7.CLK
 CLK => 8dff:inst4.CLK
 CLK => 8dff:inst8.CLK
+CLR => inst9.IN0
 
 
 |Bo_Nhan_64_Bit|Shift_Register_64_bit:M1|Register_64_bit:inst0|8dff:inst

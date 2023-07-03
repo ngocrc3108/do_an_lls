@@ -52,6 +52,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 208 344 376 360)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CLR" (rect 5 0 28 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 288 304 464 320)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -1235,6 +1251,31 @@ applicable agreement for further details.
 	)
 	(rotate90)
 )
+(symbol
+	(rect 392 336 440 368)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst9" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(text "D[0]" (rect 514 216 535 228)(font "Arial" ))
 	(pt 544 232)
@@ -1916,142 +1957,6 @@ applicable agreement for further details.
 	(pt 1400 592)
 )
 (connector
-	(pt 544 408)
-	(pt 528 408)
-)
-(connector
-	(pt 528 408)
-	(pt 528 392)
-)
-(connector
-	(pt 528 392)
-	(pt 504 392)
-)
-(connector
-	(pt 776 408)
-	(pt 760 408)
-)
-(connector
-	(pt 760 408)
-	(pt 760 392)
-)
-(connector
-	(pt 760 392)
-	(pt 736 392)
-)
-(connector
-	(pt 1008 408)
-	(pt 992 408)
-)
-(connector
-	(pt 992 408)
-	(pt 992 392)
-)
-(connector
-	(pt 992 392)
-	(pt 968 392)
-)
-(connector
-	(pt 1240 408)
-	(pt 1224 408)
-)
-(connector
-	(pt 1224 408)
-	(pt 1224 392)
-)
-(connector
-	(pt 1224 392)
-	(pt 1200 392)
-)
-(connector
-	(pt 544 656)
-	(pt 528 656)
-)
-(connector
-	(pt 528 656)
-	(pt 528 640)
-)
-(connector
-	(pt 528 640)
-	(pt 504 640)
-)
-(connector
-	(pt 776 656)
-	(pt 760 656)
-)
-(connector
-	(pt 760 656)
-	(pt 760 640)
-)
-(connector
-	(pt 760 640)
-	(pt 736 640)
-)
-(connector
-	(pt 1008 656)
-	(pt 992 656)
-)
-(connector
-	(pt 992 656)
-	(pt 992 640)
-)
-(connector
-	(pt 992 640)
-	(pt 968 640)
-)
-(connector
-	(pt 1240 656)
-	(pt 1224 656)
-)
-(connector
-	(pt 1224 656)
-	(pt 1224 640)
-)
-(connector
-	(pt 1224 640)
-	(pt 1200 640)
-)
-(connector
-	(text "vcc" (rect 514 376 532 388)(font "Arial" ))
-	(pt 544 392)
-	(pt 528 392)
-)
-(connector
-	(text "vcc" (rect 746 376 764 388)(font "Arial" ))
-	(pt 776 392)
-	(pt 760 392)
-)
-(connector
-	(text "vcc" (rect 978 376 996 388)(font "Arial" ))
-	(pt 1008 392)
-	(pt 992 392)
-)
-(connector
-	(text "vcc" (rect 1210 376 1228 388)(font "Arial" ))
-	(pt 1240 392)
-	(pt 1224 392)
-)
-(connector
-	(text "vcc" (rect 514 624 532 636)(font "Arial" ))
-	(pt 544 640)
-	(pt 528 640)
-)
-(connector
-	(text "vcc" (rect 746 624 764 636)(font "Arial" ))
-	(pt 776 640)
-	(pt 760 640)
-)
-(connector
-	(text "vcc" (rect 978 624 996 636)(font "Arial" ))
-	(pt 1008 640)
-	(pt 992 640)
-)
-(connector
-	(text "vcc" (rect 1210 624 1228 636)(font "Arial" ))
-	(pt 1240 640)
-	(pt 1224 640)
-)
-(connector
 	(text "Q[63..0]" (rect 250 296 290 308)(font "Arial" ))
 	(pt 288 312)
 	(pt 240 312)
@@ -2062,11 +1967,92 @@ applicable agreement for further details.
 	(pt 344 408)
 	(pt 384 408)
 )
-(junction (pt 528 392))
-(junction (pt 760 392))
-(junction (pt 992 392))
-(junction (pt 1224 392))
-(junction (pt 528 640))
-(junction (pt 760 640))
-(junction (pt 992 640))
-(junction (pt 1224 640))
+(connector
+	(text "vcc" (rect 514 392 532 404)(font "Arial" ))
+	(pt 504 408)
+	(pt 544 408)
+)
+(connector
+	(pt 376 352)
+	(pt 392 352)
+)
+(connector
+	(text "CLRN" (rect 442 336 472 348)(font "Arial" ))
+	(pt 440 352)
+	(pt 472 352)
+)
+(connector
+	(text "CLRN" (rect 514 376 544 388)(font "Arial" ))
+	(pt 544 392)
+	(pt 504 392)
+)
+(connector
+	(text "vcc" (rect 746 392 764 404)(font "Arial" ))
+	(pt 736 408)
+	(pt 776 408)
+)
+(connector
+	(text "CLRN" (rect 746 376 776 388)(font "Arial" ))
+	(pt 776 392)
+	(pt 736 392)
+)
+(connector
+	(text "vcc" (rect 978 392 996 404)(font "Arial" ))
+	(pt 968 408)
+	(pt 1008 408)
+)
+(connector
+	(text "CLRN" (rect 978 376 1008 388)(font "Arial" ))
+	(pt 1008 392)
+	(pt 968 392)
+)
+(connector
+	(text "vcc" (rect 1210 392 1228 404)(font "Arial" ))
+	(pt 1200 408)
+	(pt 1240 408)
+)
+(connector
+	(text "CLRN" (rect 1210 376 1240 388)(font "Arial" ))
+	(pt 1240 392)
+	(pt 1200 392)
+)
+(connector
+	(text "vcc" (rect 514 640 532 652)(font "Arial" ))
+	(pt 504 656)
+	(pt 544 656)
+)
+(connector
+	(text "CLRN" (rect 514 624 544 636)(font "Arial" ))
+	(pt 544 640)
+	(pt 504 640)
+)
+(connector
+	(text "vcc" (rect 746 640 764 652)(font "Arial" ))
+	(pt 736 656)
+	(pt 776 656)
+)
+(connector
+	(text "CLRN" (rect 746 624 776 636)(font "Arial" ))
+	(pt 776 640)
+	(pt 736 640)
+)
+(connector
+	(text "vcc" (rect 978 640 996 652)(font "Arial" ))
+	(pt 968 656)
+	(pt 1008 656)
+)
+(connector
+	(text "CLRN" (rect 978 624 1008 636)(font "Arial" ))
+	(pt 1008 640)
+	(pt 968 640)
+)
+(connector
+	(text "vcc" (rect 1210 640 1228 652)(font "Arial" ))
+	(pt 1200 656)
+	(pt 1240 656)
+)
+(connector
+	(text "CLRN" (rect 1210 624 1240 636)(font "Arial" ))
+	(pt 1240 640)
+	(pt 1200 640)
+)
