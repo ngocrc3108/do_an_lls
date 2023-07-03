@@ -330,12 +330,12 @@ done => inst69.OE
 
 
 |Bo_Nhan_64_Bit|Control:inst11
-WE <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Done <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst2.CLK
 CLK => inst.CLK
 Zero => inst9.IN2
 Start => inst8.IN2
-Done <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+WE <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Bo_Nhan_64_Bit|lpm_compare0:inst2

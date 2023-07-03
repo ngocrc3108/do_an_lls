@@ -1,5 +1,5 @@
 Flow report for Bo_Nhan_64_Bit
-Fri Jun 30 19:38:57 2023
+Mon Jul 03 11:44:24 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------------+
-; Flow Summary                                                                              ;
-+------------------------------------+------------------------------------------------------+
-; Flow Status                        ; EDA Netlist Writer Failed - Fri Jun 30 19:38:57 2023 ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition      ;
-; Revision Name                      ; Bo_Nhan_64_Bit                                       ;
-; Top-level Entity Name              ; Bo_Nhan_64_Bit                                       ;
-; Family                             ; Cyclone II                                           ;
-; Device                             ; EP2C35F672C6                                         ;
-; Timing Models                      ; Final                                                ;
-; Total logic elements               ; 175                                                  ;
-;     Total combinational functions  ; 175                                                  ;
-;     Dedicated logic registers      ; 162                                                  ;
-; Total registers                    ; 162                                                  ;
-; Total pins                         ; 130                                                  ;
-; Total virtual pins                 ; 0                                                    ;
-; Total memory bits                  ; 0                                                    ;
-; Embedded Multiplier 9-bit elements ; 0                                                    ;
-; Total PLLs                         ; 0                                                    ;
-+------------------------------------+------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Mon Jul 03 11:44:24 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Bo_Nhan_64_Bit                                  ;
+; Top-level Entity Name              ; Bo_Nhan_64_Bit                                  ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 175                                             ;
+;     Total combinational functions  ; 175                                             ;
+;     Dedicated logic registers      ; 162                                             ;
+; Total registers                    ; 162                                             ;
+; Total pins                         ; 130                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/30/2023 00:04:03 ;
+; Start date & time ; 07/03/2023 11:44:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Bo_Nhan_64_Bit      ;
 +-------------------+---------------------+
@@ -75,16 +75,16 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 84077392418812.168805824308912 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 84077392418812.168835946315944 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COMPARE                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter0.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter0.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_compare1.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_compare1.cmp               ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top            ;
@@ -97,12 +97,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 4654 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
-; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,10 +108,6 @@ applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
 ; Analysis & Synthesis ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -123,10 +115,6 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit --vector_source="D:/My Document/Semester_4/login design/do_an/dung_thu_vien/BoNhan_vwf.vwf" --testbench_file=./simulation/qsim/Bo_Nhan_64_Bit.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit --vector_source="D:/My Document/Semester_4/login design/do_an/dung_thu_vien/Quartus/BoNhan_vwf.vwf" --testbench_file=./simulation/qsim/Bo_Nhan_64_Bit.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit
 
 
 
