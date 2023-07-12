@@ -1,5 +1,5 @@
 Flow report for Bo_Nhan_64_Bit
-Mon Jul 03 12:06:12 2023
+Wed Jul 12 08:28:33 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 03 12:06:12 2023           ;
+; Flow Status                        ; Successful - Wed Jul 12 08:28:33 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Bo_Nhan_64_Bit                                  ;
 ; Top-level Entity Name              ; Bo_Nhan_64_Bit                                  ;
@@ -98,7 +98,11 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4654 MB             ; 00:00:01                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
+; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,6 +112,10 @@ applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
 ; Analysis & Synthesis ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; MSI              ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -115,6 +123,10 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit --vector_source="D:/My Document/Semester_4/login design/do_an/dung_thu_vien/Quartus/BoNhan_vwf.vwf" --testbench_file=./simulation/qsim/Bo_Nhan_64_Bit.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit --vector_source="D:/My Document/Semester_4/login design/do_an/dung_thu_vien/Quartus/BoNhan_vwf.vwf" --testbench_file=./simulation/qsim/Bo_Nhan_64_Bit.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Bo_Nhan_64_Bit -c Bo_Nhan_64_Bit
 
 
 
